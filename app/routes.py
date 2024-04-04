@@ -19,17 +19,5 @@ def obtener_mensaje():
     mensaje = mensaje_respuesta(texto)
     return jsonify({"mensaje": mensaje})
 
-# @app.route('/', methods=['GET', 'POST'])
-# def guardar_texto():
-#     if request.method == 'POST':
-#         texto_usuario = request.form.getlist('anime_input')
-#     # datos = request.json
-#     # texto = datos.get('texto', '')
-    
-#     # with open('texto_guardado.txt', 'a') as archivo:
-#     #     archivo.write(texto + '\n')
-    
-#     return jsonify({'mensaje': 'Texto recibido correctamente'})
-
 if __name__ == '__main__':
     app.run(debug=True)
