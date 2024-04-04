@@ -1,15 +1,23 @@
-from flask import render_template, request
+from flask import render_template, request, jsonify
 from app import app
 from app.game.menu import Menu
+from app.game.test import mensaje as mensaje_respuesta
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     menu = Menu.mostrar_menu()
+    respuesta = None
     if request.method == 'POST':
-        input_user = request.form['texto']
-        print(input_user)
-    return render_template('index.html', menu=menu, input_user=input_user)
+        texto = request.form.get('texto')
+        mensaje = mensaje_respuesta(texto)
 
+    return render_template('index.html')
+
+@app.route('/mensaje', methods=['POST'])
+def obtener_mensaje():
+    texto = request.form.get('texto')
+    mensaje = mensaje_respuesta(texto)
+    return jsonify({"mensaje": mensaje})
 
 # @app.route('/', methods=['GET', 'POST'])
 # def guardar_texto():
