@@ -1,0 +1,137 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.5)), url('../images/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    font-family: chaneyultra_extended, sans-serif;
+
+}
+
+/* LPG LOGO */
+.logo img {
+    position: absolute;
+    height: auto;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+/* CONSOLA CSS */
+.contenido-game {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.console-container {
+    width: 999px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.console-header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.console-buttons {
+    display: flex;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.yellow {
+    background-color: #ffeb3b;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+.console-title {
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+.console-title:hover {
+    color: rgb(208, 231, 30);
+}
+
+.console-body {
+    padding: 20px;
+    max-height: 500px;
+    width: calc(100% - 40px);
+    overflow-y: auto;
+    overflow-x: auto;
+    top: 0;
+    left: 0;
+}
+
+.console-body h2 {
+    font-size: 20px;
+}
+
+.console-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    height: 40px;
+    resize: none;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    outline: none;
+    z-index: 1;
+    width: 100%;
+}
+
+.form-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #333;
+}

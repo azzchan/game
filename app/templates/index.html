@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="#"><img src="../static/images/lpg-logo.webp" alt="lepravda-logotipo" /></a>
+    </header>
+
+
+    <div class="console-container">
+        <div class="console-header">
+            <div class="console-buttons">
+                <div class="button red"></div>
+                <div class="button yellow"></div>
+                <div class="button green"></div>
+            </div>
+            <a class="console-title" href="url_de_destino">Info</a>
+        </div>
+
+        <div class="console-body">
+            <div class="contenido-game">
+
+                <h2>REGLAS</h2>
+                <p>TEXTO DE PRUEBA 1</p>
+                <p>TEXTO DE PRUEBA 2</p>
+                <p>{{ texto }}</p>
+                <p>TEXTO DE PRUEBA 3</p>
+                <p>TEXTO DE PRUEBA 4</p>
+            </div>
+            <div>
+                <form action="/" method="POST">
+                    <input class="console-input" type="text" id="texto" name="texto" placeholder="Escribe aquí...">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>THE GAME: PROLOGE</h1>
+        <p>Desarrollado por el equipo de LePravda Group.</p>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
