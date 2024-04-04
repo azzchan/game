@@ -1,9 +1,7 @@
 .venv/
 __pycache__/
 test.py
-papelera.html
-papelera.css
-papelera.py
+papelera
 fonts
 logo.png
 lpg_logo.png
